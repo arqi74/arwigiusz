@@ -78,10 +78,10 @@ setTimeout(typeStep, 900);
    TERMINAL TYPING
    ========================================= */
 const terminalLines = [
-  { text: '// arwi.dev — portfolio', cls: 't-comment' },
+  { text: '// arwi74.dev — portfolio', cls: 't-comment' },
   { text: '' },
   { text: 'const dev = {', cls: '' },
-  { text: '  alias: <span class="t-str">"ARWI.DEV"</span>,', cls: 't-key' },
+  { text: '  alias: <span class="t-str">"ARWI74.DEV"</span>,', cls: 't-key' },
   { text: '  role:  <span class="t-str">"Web Developer"</span>,', cls: 't-key' },
   { text: '  exp:   <span class="t-num">3</span>,', cls: 't-key' },
   { text: '  open:  <span class="t-fn">true</span>', cls: 't-key' },
