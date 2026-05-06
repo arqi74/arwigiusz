@@ -10,6 +10,10 @@
 </head>
 <body>
 
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
   <!-- NAV -->
   <nav class="nav">
     <div class="nav__logo">AR<span class="accent">.</span></div>
@@ -27,44 +31,134 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__bg-grid"></div>
+    <div class="hero__orb"></div>
+
+    <!-- LEFT CONTENT -->
     <div class="hero__content">
-      <div class="hero__tag mono">[ WEB DEVELOPER ]</div>
-      <h1 class="hero__title">
+      <div class="hero__tag mono reveal-item">
+        <span class="hero__tag-bracket">[</span>
+        WEB DEVELOPER
+        <span class="hero__tag-bracket">]</span>
+      </div>
+      <h1 class="hero__title reveal-item">
         Buduję<br />
         <span class="accent">cyfrowe</span><br />
         doświadczenia.
       </h1>
-      <p class="hero__sub">
-        Projektuję i tworzę nowoczesne strony<br />
-        oraz aplikacje webowe — szybkie, estetyczne, funkcjonalne.
+      <p class="hero__sub reveal-item">
+        <span id="typewriter"></span><span class="typewriter-cursor">|</span>
       </p>
-      <div class="hero__cta">
-        <a href="#projects" class="btn btn--primary">Moje projekty</a>
-        <a href="#contact" class="btn btn--ghost">Skontaktuj się</a>
+      <div class="hero__cta reveal-item">
+        <a href="#projects" class="btn btn--primary magnetic">Moje projekty</a>
+        <a href="#contact" class="btn btn--ghost magnetic">Skontaktuj się</a>
       </div>
-    </div>
-    <div class="hero__deco">
-      <div class="hero__deco-box">
-        <span class="mono deco-label">v2.0.26</span>
-        <div class="deco-lines">
-          <div class="deco-line"></div>
-          <div class="deco-line"></div>
-          <div class="deco-line"></div>
+      <div class="hero__metrics reveal-item">
+        <div class="metric">
+          <span class="metric__val mono">99<span class="accent">%</span></span>
+          <span class="metric__label mono">Lighthouse</span>
+        </div>
+        <div class="metric__divider"></div>
+        <div class="metric">
+          <span class="metric__val mono">10<span class="accent">+</span></span>
+          <span class="metric__label mono">Projektów</span>
+        </div>
+        <div class="metric__divider"></div>
+        <div class="metric">
+          <span class="metric__val mono">3<span class="accent">+</span></span>
+          <span class="metric__label mono">Lata exp.</span>
         </div>
       </div>
     </div>
-    <div class="hero__scroll mono">SCROLL ↓</div>
+
+    <!-- RIGHT DECO -->
+    <div class="hero__right">
+
+      <!-- Terminal window -->
+      <div class="terminal reveal-item">
+        <div class="terminal__bar">
+          <div class="terminal__dots">
+            <span class="tdot tdot--red"></span>
+            <span class="tdot tdot--yellow"></span>
+            <span class="tdot tdot--green"></span>
+          </div>
+          <span class="mono terminal__title">portfolio.js</span>
+        </div>
+        <div class="terminal__body mono" id="terminal-code"></div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="badge badge--1 reveal-item float-anim">
+        <span class="badge__icon">⚡</span>
+        <span class="badge__text mono">Fast</span>
+      </div>
+      <div class="badge badge--2 reveal-item float-anim float-anim--delay">
+        <span class="badge__icon">✦</span>
+        <span class="badge__text mono">UI/UX</span>
+      </div>
+      <div class="badge badge--3 reveal-item float-anim float-anim--delay2">
+        <span class="badge__icon">◈</span>
+        <span class="badge__text mono">React</span>
+      </div>
+
+      <!-- Corner decoration -->
+      <div class="corner-deco corner-deco--tr"></div>
+      <div class="corner-deco corner-deco--br"></div>
+    </div>
+
+    <div class="hero__scroll mono">
+      <span class="scroll-line"></span>
+      SCROLL
+    </div>
   </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item mono">HTML / CSS</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">JavaScript</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">TypeScript</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">React</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Next.js</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Node.js</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Figma</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Git</span>
+      <span class="ticker__sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker__item mono">HTML / CSS</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">JavaScript</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">TypeScript</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">React</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Next.js</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Node.js</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Figma</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item mono">Git</span>
+      <span class="ticker__sep">✦</span>
+    </div>
+  </div>
 
   <!-- ABOUT -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal-section">
         <span class="section__num mono">01</span>
         <h2 class="section__title">O mnie</h2>
         <div class="section__line"></div>
       </div>
-      <div class="about__grid">
+      <div class="about__grid reveal-section">
         <div class="about__text">
           <p>
             Jestem web developerem skupionym na tworzeniu stron i aplikacji internetowych,
@@ -86,15 +180,15 @@
         </div>
         <div class="about__stats">
           <div class="stat">
-            <span class="stat__num accent">03+</span>
+            <span class="stat__num accent" data-count="3" data-suffix="+">0+</span>
             <span class="stat__label mono">Lat doświadczenia</span>
           </div>
           <div class="stat">
-            <span class="stat__num accent">10+</span>
+            <span class="stat__num accent" data-count="10" data-suffix="+">0+</span>
             <span class="stat__label mono">Projektów</span>
           </div>
           <div class="stat">
-            <span class="stat__num accent">100%</span>
+            <span class="stat__num accent" data-count="100" data-suffix="%">0%</span>
             <span class="stat__label mono">Zaangażowania</span>
           </div>
         </div>
@@ -105,19 +199,18 @@
   <!-- PROJECTS -->
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal-section">
         <span class="section__num mono">02</span>
         <h2 class="section__title">Projekty</h2>
         <div class="section__line"></div>
       </div>
       <div class="projects__grid">
 
-        <article class="project-card">
+        <article class="project-card reveal-section" style="--delay:0ms">
+          <div class="project-card__glow"></div>
           <div class="project-card__header">
             <span class="project-card__num mono">001</span>
-            <div class="project-card__links">
-              <a href="#" class="project-link" aria-label="Live">↗</a>
-            </div>
+            <a href="#" class="project-link" aria-label="Live">↗</a>
           </div>
           <h3 class="project-card__title">Projekt Alpha</h3>
           <p class="project-card__desc">
@@ -131,12 +224,11 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal-section" style="--delay:120ms">
+          <div class="project-card__glow"></div>
           <div class="project-card__header">
             <span class="project-card__num mono">002</span>
-            <div class="project-card__links">
-              <a href="#" class="project-link" aria-label="Live">↗</a>
-            </div>
+            <a href="#" class="project-link" aria-label="Live">↗</a>
           </div>
           <h3 class="project-card__title">Projekt Beta</h3>
           <p class="project-card__desc">
@@ -150,12 +242,11 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal-section" style="--delay:240ms">
+          <div class="project-card__glow"></div>
           <div class="project-card__header">
             <span class="project-card__num mono">003</span>
-            <div class="project-card__links">
-              <a href="#" class="project-link" aria-label="Live">↗</a>
-            </div>
+            <a href="#" class="project-link" aria-label="Live">↗</a>
           </div>
           <h3 class="project-card__title">Projekt Gamma</h3>
           <p class="project-card__desc">
@@ -176,15 +267,15 @@
   <!-- CONTACT -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal-section">
         <span class="section__num mono">03</span>
         <h2 class="section__title">Kontakt</h2>
         <div class="section__line"></div>
       </div>
-      <div class="contact__inner">
+      <div class="contact__inner reveal-section">
         <div class="contact__left">
           <p class="contact__lead">
-            Masz projekt? Porozmawiajmy.
+            Masz projekt?<br />Porozmawiajmy.
           </p>
           <p class="contact__sub">
             Jestem dostępny do współpracy — zarówno projekty komercyjne,
