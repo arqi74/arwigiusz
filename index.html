@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARWIGIUSZ — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">AR<span class="accent">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">O mnie</a></li>
+      <li><a href="#projects">Projekty</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <div class="nav__status">
+      <span class="status-dot"></span>
+      <span class="mono">Dostępny</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <div class="hero__tag mono">[ WEB DEVELOPER ]</div>
+      <h1 class="hero__title">
+        Buduję<br />
+        <span class="accent">cyfrowe</span><br />
+        doświadczenia.
+      </h1>
+      <p class="hero__sub">
+        Projektuję i tworzę nowoczesne strony<br />
+        oraz aplikacje webowe — szybkie, estetyczne, funkcjonalne.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Moje projekty</a>
+        <a href="#contact" class="btn btn--ghost">Skontaktuj się</a>
+      </div>
+    </div>
+    <div class="hero__deco">
+      <div class="hero__deco-box">
+        <span class="mono deco-label">v2.0.26</span>
+        <div class="deco-lines">
+          <div class="deco-line"></div>
+          <div class="deco-line"></div>
+          <div class="deco-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll mono">SCROLL ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num mono">01</span>
+        <h2 class="section__title">O mnie</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Jestem web developerem skupionym na tworzeniu stron i aplikacji internetowych,
+            które łączą czystą estetykę z solidną technologią. Każdy projekt traktuję jako
+            produkt — dbam o szczegóły zarówno wizualne, jak i techniczne.
+          </p>
+          <p>
+            Pracuję głównie z nowoczesnymi technologiami frontendowymi, stawiam na
+            wydajność, dostępność i doświadczenie użytkownika.
+          </p>
+          <div class="about__tags">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num accent">03+</span>
+            <span class="stat__label mono">Lat doświadczenia</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num accent">10+</span>
+            <span class="stat__label mono">Projektów</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num accent">100%</span>
+            <span class="stat__label mono">Zaangażowania</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num mono">02</span>
+        <h2 class="section__title">Projekty</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__num mono">001</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Projekt Alpha</h3>
+          <p class="project-card__desc">
+            Nowoczesna strona internetowa dla lokalnej firmy. Responsywny design,
+            optymalizacja SEO, integracja z CMS.
+          </p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">Next.js</span>
+            <span class="tag tag--sm">Tailwind</span>
+            <span class="tag tag--sm">Sanity</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__num mono">002</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Projekt Beta</h3>
+          <p class="project-card__desc">
+            Aplikacja webowa do zarządzania zadaniami z systemem autoryzacji,
+            panelem admina i API REST.
+          </p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">React</span>
+            <span class="tag tag--sm">Node.js</span>
+            <span class="tag tag--sm">MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__num mono">003</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" aria-label="Live">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Projekt Gamma</h3>
+          <p class="project-card__desc">
+            Landing page dla startupu technologicznego. Animowane sekcje,
+            formularz kontaktowy, wysoka wydajność Lighthouse.
+          </p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">HTML/CSS</span>
+            <span class="tag tag--sm">GSAP</span>
+            <span class="tag tag--sm">JS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num mono">03</span>
+        <h2 class="section__title">Kontakt</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="contact__inner">
+        <div class="contact__left">
+          <p class="contact__lead">
+            Masz projekt? Porozmawiajmy.
+          </p>
+          <p class="contact__sub">
+            Jestem dostępny do współpracy — zarówno projekty komercyjne,
+            jak i ciekawe side-projekty.
+          </p>
+          <a href="mailto:kontakt@arwigiusz.pl" class="contact__email accent">
+            kontakt@arwigiusz.pl
+          </a>
+        </div>
+        <div class="contact__right">
+          <div class="contact__socials">
+            <a href="#" class="social-link">
+              <span class="mono">GH</span>
+              <span>GitHub</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="mono">LI</span>
+              <span>LinkedIn</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="mono">TW</span>
+              <span>Twitter / X</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono footer__copy">© 2026 ARWIGIUSZ</span>
+      <span class="mono footer__built">Built with <span class="accent">♥</span> & code</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
