@@ -40,9 +40,9 @@ window.addEventListener('load', () => {
    TYPEWRITER
    ========================================= */
 const phrases = [
-  'Projektuję i tworzę nowoczesne strony\noraz aplikacje webowe.',
-  'Szybkie. Estetyczne. Funkcjonalne.',
-  'Każdy projekt traktuję jako produkt.',
+  'I design and build modern websites\nand web applications.',
+  'Fast. Aesthetic. Functional.',
+  'Every project treated as a product.',
 ];
 
 const tw = document.getElementById('typewriter');
@@ -78,13 +78,13 @@ setTimeout(typeStep, 900);
    TERMINAL TYPING
    ========================================= */
 const terminalLines = [
-  { text: '// web developer', cls: 't-comment' },
+  { text: '// arwi.dev — portfolio', cls: 't-comment' },
   { text: '' },
   { text: 'const dev = {', cls: '' },
-  { text: '  name: <span class="t-str">"Arwigiusz"</span>,', cls: 't-key' },
-  { text: '  role: <span class="t-str">"Frontend Dev"</span>,', cls: 't-key' },
-  { text: '  exp:  <span class="t-num">3</span>,', cls: 't-key' },
-  { text: '  open: <span class="t-fn">true</span>', cls: 't-key' },
+  { text: '  alias: <span class="t-str">"ARWI.DEV"</span>,', cls: 't-key' },
+  { text: '  role:  <span class="t-str">"Web Developer"</span>,', cls: 't-key' },
+  { text: '  exp:   <span class="t-num">3</span>,', cls: 't-key' },
+  { text: '  open:  <span class="t-fn">true</span>', cls: 't-key' },
   { text: '};', cls: '' },
   { text: '' },
   { text: 'dev.<span class="t-fn">build</span>(<span class="t-str">"something cool"</span>);', cls: '' },
