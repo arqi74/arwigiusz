@@ -747,47 +747,102 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section__header reveal-section">
-        <span class="section__num mono">05</span>
-        <h2 class="section__title">Contact</h2>
-        <div class="section__line"></div>
-      </div>
-      <div class="contact__inner reveal-section">
-        <div class="contact__left">
-          <p class="contact__lead">
-            Got a project?<br />Let's talk.
-          </p>
-          <p class="contact__sub">
-            I'm open for collaboration — both commercial projects
-            and interesting side projects.
-          </p>
-          <a href="mailto:hello@arwi74.dev" class="contact__email accent">
-            hello@arwi74.dev
-          </a>
+  <section class="contact" id="contact">
+    <div class="contact__bg-orb"></div>
+    <div class="contact__bg-grid"></div>
+
+    <div class="container contact__wrap">
+
+      <!-- HEADLINE -->
+      <div class="contact__hero reveal-section">
+        <div class="contact__avail">
+          <span class="status-dot"></span>
+          <span class="mono">Available for work</span>
         </div>
-        <div class="contact__right">
-          <div class="contact__socials">
-            <a href="#" class="social-link">
-              <span class="mono">GH</span>
-              <span>GitHub</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="#" class="social-link">
-              <span class="mono">LI</span>
-              <span>LinkedIn</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="#" class="social-link">
-              <span class="mono">TW</span>
-              <span>Twitter / X</span>
-              <span class="arrow">→</span>
-            </a>
+        <h2 class="contact__headline">
+          <span class="ch-line" style="--li:0">Let's build</span>
+          <span class="ch-line" style="--li:1">something</span>
+          <span class="ch-line ch-line--accent" style="--li:2">great.</span>
+        </h2>
+        <p class="contact__sub reveal-section" style="--delay:200ms">
+          Open for commercial projects and interesting side ventures.<br />
+          Drop me a message — I usually reply within 24 hours.
+        </p>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="contact__rule reveal-section" style="--delay:300ms">
+        <span class="mono">reach out</span>
+        <div class="contact__rule-line"></div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contact__email-row reveal-section" style="--delay:400ms">
+        <button class="contact__email-btn" id="copy-email" aria-label="Copy email">
+          <span class="contact__email-text">hello@arwi74.dev</span>
+          <span class="contact__email-action mono" id="copy-label">
+            <span class="copy-icon">⎘</span> copy
+          </span>
+        </button>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="contact__rule reveal-section" style="--delay:500ms">
+        <span class="mono">find me on</span>
+        <div class="contact__rule-line"></div>
+      </div>
+
+      <!-- SOCIAL CARDS -->
+      <div class="soc-grid reveal-section" style="--delay:600ms">
+
+        <a href="#" class="soc-card" target="_blank" rel="noopener">
+          <div class="soc-card__glow"></div>
+          <div class="soc-card__top">
+            <span class="soc-card__abbr mono">GH</span>
+            <span class="soc-card__arrow">↗</span>
           </div>
-        </div>
+          <div class="soc-card__body">
+            <span class="soc-card__name">GitHub</span>
+            <span class="soc-card__handle mono">@arwi74</span>
+          </div>
+          <div class="soc-card__bar"></div>
+        </a>
+
+        <a href="#" class="soc-card" target="_blank" rel="noopener">
+          <div class="soc-card__glow"></div>
+          <div class="soc-card__top">
+            <span class="soc-card__abbr mono">LI</span>
+            <span class="soc-card__arrow">↗</span>
+          </div>
+          <div class="soc-card__body">
+            <span class="soc-card__name">LinkedIn</span>
+            <span class="soc-card__handle mono">/in/arwi74</span>
+          </div>
+          <div class="soc-card__bar"></div>
+        </a>
+
+        <a href="#" class="soc-card" target="_blank" rel="noopener">
+          <div class="soc-card__glow"></div>
+          <div class="soc-card__top">
+            <span class="soc-card__abbr mono">TW</span>
+            <span class="soc-card__arrow">↗</span>
+          </div>
+          <div class="soc-card__body">
+            <span class="soc-card__name">Twitter / X</span>
+            <span class="soc-card__handle mono">@arwi74</span>
+          </div>
+          <div class="soc-card__bar"></div>
+        </a>
+
       </div>
+
+    </div><!-- /container -->
+
+    <!-- TOAST -->
+    <div class="toast" id="copy-toast">
+      <span class="accent">✓</span> Copied to clipboard
     </div>
+
   </section>
 
   <!-- FOOTER -->

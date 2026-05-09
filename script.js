@@ -237,6 +237,50 @@ const skillsSection = document.querySelector('.skills');
 if (skillsSection) skillsObserver.observe(skillsSection);
 
 /* =========================================
+   CONTACT — copy email + social card tilt
+   ========================================= */
+const copyBtn   = document.getElementById('copy-email');
+const copyLabel = document.getElementById('copy-label');
+const toast     = document.getElementById('copy-toast');
+let toastTimer;
+
+if (copyBtn) {
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText('hello@arwi74.dev').then(() => {
+      copyLabel.innerHTML = '<span class="copy-icon">✓</span> copied!';
+      copyLabel.style.borderColor = 'var(--accent)';
+      copyLabel.style.color       = 'var(--accent)';
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+          copyLabel.innerHTML = '<span class="copy-icon">⎘</span> copy';
+          copyLabel.style.borderColor = '';
+          copyLabel.style.color       = '';
+        }, 400);
+      }, 2200);
+    });
+  });
+}
+
+/* Social card — mouse-tracking glow + 3D tilt */
+document.querySelectorAll('.soc-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width;
+    const y = (e.clientY - r.top)  / r.height;
+    card.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+    card.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+    card.style.transform =
+      `perspective(600px) rotateX(${((y - 0.5) * -10).toFixed(1)}deg) rotateY(${((x - 0.5) * 12).toFixed(1)}deg) translateZ(8px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+/* =========================================
    ACTIVE NAV ON SCROLL
    ========================================= */
 const sections = document.querySelectorAll('section[id]');
