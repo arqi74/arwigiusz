@@ -157,15 +157,23 @@ const statsSection = document.querySelector('.about__stats');
 if (statsSection) statObserver.observe(statsSection);
 
 /* =========================================
-   CARD MOUSE-GLOW
+   PROJECT CARDS — 3D BROWSER TILT
    ========================================= */
-document.querySelectorAll('.project-card').forEach(card => {
+document.querySelectorAll('.pj').forEach(card => {
+  const browser = card.querySelector('.browser');
+  if (!browser) return;
+
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
-    const x = ((e.clientX - r.left) / r.width  * 100).toFixed(1);
-    const y = ((e.clientY - r.top)  / r.height * 100).toFixed(1);
-    card.style.setProperty('--mx', x + '%');
-    card.style.setProperty('--my', y + '%');
+    const x = (e.clientX - r.left) / r.width  - 0.5;
+    const y = (e.clientY - r.top)  / r.height - 0.5;
+    browser.style.transform =
+      `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 6}deg) translateZ(12px)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    browser.style.transform =
+      'perspective(800px) rotateY(0deg) rotateX(0deg) translateZ(0)';
   });
 });
 

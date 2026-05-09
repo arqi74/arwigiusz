@@ -370,59 +370,198 @@
         <h2 class="section__title">Projects</h2>
         <div class="section__line"></div>
       </div>
-      <div class="projects__grid">
 
-        <article class="project-card reveal-section" style="--delay:0ms">
-          <div class="project-card__glow"></div>
-          <div class="project-card__header">
-            <span class="project-card__num mono">001</span>
-            <a href="#" class="project-link" aria-label="Live">↗</a>
+      <div class="pj-list">
+
+        <!-- PROJECT 01 -->
+        <article class="pj reveal-section" style="--delay:0ms">
+          <div class="pj__sweep"></div>
+          <div class="pj__info">
+            <div class="pj__meta">
+              <span class="pj__num mono">001</span>
+              <span class="pj__type mono">Business Website</span>
+            </div>
+            <h3 class="pj__title">Project Alpha</h3>
+            <p class="pj__desc">
+              Modern website for a local business. Responsive design,
+              SEO optimization, and full CMS integration for easy content management.
+            </p>
+            <div class="pj__stack">
+              <span class="tag tag--sm">Next.js</span>
+              <span class="tag tag--sm">Tailwind</span>
+              <span class="tag tag--sm">Sanity</span>
+            </div>
+            <a href="#" class="pj__link btn btn--ghost">
+              View project <span>↗</span>
+            </a>
           </div>
-          <h3 class="project-card__title">Project Alpha</h3>
-          <p class="project-card__desc">
-            Modern website for a local business. Responsive design,
-            SEO optimization, CMS integration.
-          </p>
-          <div class="project-card__stack">
-            <span class="tag tag--sm">Next.js</span>
-            <span class="tag tag--sm">Tailwind</span>
-            <span class="tag tag--sm">Sanity</span>
+
+          <div class="pj__mockup">
+            <div class="browser">
+              <div class="browser__bar">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__url mono">alpha-project.com</div>
+              </div>
+              <div class="browser__screen mock-alpha">
+                <div class="m-nav">
+                  <div class="m-logo"></div>
+                  <div class="m-nav-links">
+                    <div class="m-line w40"></div>
+                    <div class="m-line w40"></div>
+                    <div class="m-line w40"></div>
+                  </div>
+                  <div class="m-btn"></div>
+                </div>
+                <div class="m-hero-alpha">
+                  <div class="m-tag"></div>
+                  <div class="m-h1"></div>
+                  <div class="m-h1 w70"></div>
+                  <div class="m-sub"></div>
+                  <div class="m-sub w60"></div>
+                  <div class="m-btns">
+                    <div class="m-btn-p"></div>
+                    <div class="m-btn-g"></div>
+                  </div>
+                </div>
+                <div class="m-cards-row">
+                  <div class="m-card"></div>
+                  <div class="m-card"></div>
+                  <div class="m-card"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal-section" style="--delay:120ms">
-          <div class="project-card__glow"></div>
-          <div class="project-card__header">
-            <span class="project-card__num mono">002</span>
-            <a href="#" class="project-link" aria-label="Live">↗</a>
+        <!-- PROJECT 02 -->
+        <article class="pj pj--reverse reveal-section" style="--delay:80ms">
+          <div class="pj__sweep"></div>
+          <div class="pj__info">
+            <div class="pj__meta">
+              <span class="pj__num mono">002</span>
+              <span class="pj__type mono">Web Application</span>
+            </div>
+            <h3 class="pj__title">Project Beta</h3>
+            <p class="pj__desc">
+              Task management web app with authorization, admin dashboard,
+              and a REST API — built for teams to track work in real time.
+            </p>
+            <div class="pj__stack">
+              <span class="tag tag--sm">React</span>
+              <span class="tag tag--sm">Node.js</span>
+              <span class="tag tag--sm">MongoDB</span>
+            </div>
+            <a href="#" class="pj__link btn btn--ghost">
+              View project <span>↗</span>
+            </a>
           </div>
-          <h3 class="project-card__title">Project Beta</h3>
-          <p class="project-card__desc">
-            Task management web app with an authorization system,
-            admin dashboard, and REST API.
-          </p>
-          <div class="project-card__stack">
-            <span class="tag tag--sm">React</span>
-            <span class="tag tag--sm">Node.js</span>
-            <span class="tag tag--sm">MongoDB</span>
+
+          <div class="pj__mockup">
+            <div class="browser">
+              <div class="browser__bar">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__url mono">app.beta-project.io</div>
+              </div>
+              <div class="browser__screen mock-beta">
+                <div class="m-sidebar">
+                  <div class="m-s-logo"></div>
+                  <div class="m-s-items">
+                    <div class="m-s-item m-s-item--active"></div>
+                    <div class="m-s-item"></div>
+                    <div class="m-s-item"></div>
+                    <div class="m-s-item"></div>
+                  </div>
+                </div>
+                <div class="m-main">
+                  <div class="m-topbar">
+                    <div class="m-line w30"></div>
+                    <div class="m-avatar"></div>
+                  </div>
+                  <div class="m-dash-grid">
+                    <div class="m-stat-card">
+                      <div class="m-line w50 mb4"></div>
+                      <div class="m-big-num"></div>
+                      <div class="m-sparkline"><div class="m-spark-fill"></div></div>
+                    </div>
+                    <div class="m-stat-card">
+                      <div class="m-line w50 mb4"></div>
+                      <div class="m-big-num"></div>
+                      <div class="m-sparkline"><div class="m-spark-fill" style="width:65%"></div></div>
+                    </div>
+                    <div class="m-stat-card">
+                      <div class="m-line w50 mb4"></div>
+                      <div class="m-big-num"></div>
+                      <div class="m-sparkline"><div class="m-spark-fill" style="width:40%"></div></div>
+                    </div>
+                  </div>
+                  <div class="m-task-list">
+                    <div class="m-task"><div class="m-check done"></div><div class="m-line w55"></div></div>
+                    <div class="m-task"><div class="m-check done"></div><div class="m-line w70"></div></div>
+                    <div class="m-task"><div class="m-check"></div><div class="m-line w45"></div></div>
+                    <div class="m-task"><div class="m-check"></div><div class="m-line w60"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal-section" style="--delay:240ms">
-          <div class="project-card__glow"></div>
-          <div class="project-card__header">
-            <span class="project-card__num mono">003</span>
-            <a href="#" class="project-link" aria-label="Live">↗</a>
+        <!-- PROJECT 03 -->
+        <article class="pj reveal-section" style="--delay:160ms">
+          <div class="pj__sweep"></div>
+          <div class="pj__info">
+            <div class="pj__meta">
+              <span class="pj__num mono">003</span>
+              <span class="pj__type mono">Landing Page</span>
+            </div>
+            <h3 class="pj__title">Project Gamma</h3>
+            <p class="pj__desc">
+              Landing page for a tech startup. Animated sections,
+              contact form, and a perfect Lighthouse performance score.
+            </p>
+            <div class="pj__stack">
+              <span class="tag tag--sm">HTML/CSS</span>
+              <span class="tag tag--sm">GSAP</span>
+              <span class="tag tag--sm">JS</span>
+            </div>
+            <a href="#" class="pj__link btn btn--ghost">
+              View project <span>↗</span>
+            </a>
           </div>
-          <h3 class="project-card__title">Project Gamma</h3>
-          <p class="project-card__desc">
-            Landing page for a tech startup. Animated sections,
-            contact form, high Lighthouse score.
-          </p>
-          <div class="project-card__stack">
-            <span class="tag tag--sm">HTML/CSS</span>
-            <span class="tag tag--sm">GSAP</span>
-            <span class="tag tag--sm">JS</span>
+
+          <div class="pj__mockup">
+            <div class="browser">
+              <div class="browser__bar">
+                <div class="browser__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser__url mono">gamma-startup.io</div>
+              </div>
+              <div class="browser__screen mock-gamma">
+                <div class="mg-nav">
+                  <div class="m-logo"></div>
+                  <div class="m-btn"></div>
+                </div>
+                <div class="mg-hero">
+                  <div class="mg-orb"></div>
+                  <div class="m-tag"></div>
+                  <div class="m-h1 w80"></div>
+                  <div class="m-h1 w55"></div>
+                  <div class="m-sub w65"></div>
+                  <div class="m-btn-p mx-auto"></div>
+                </div>
+                <div class="mg-logos">
+                  <div class="mg-logo-pill"></div>
+                  <div class="mg-logo-pill"></div>
+                  <div class="mg-logo-pill"></div>
+                  <div class="mg-logo-pill"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
