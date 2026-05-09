@@ -178,6 +178,30 @@ document.querySelectorAll('.pj').forEach(card => {
 });
 
 /* =========================================
+   PROCESS — stagger step nodes
+   ========================================= */
+const processObserver = new IntersectionObserver(
+  entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const steps = e.target.querySelectorAll('.flow-step, .flow-bnode, .flow-launch, .flow-complete');
+    steps.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, i * 80);
+    });
+    processObserver.disconnect();
+  }),
+  { threshold: 0.1 }
+);
+
+const processSection = document.querySelector('.process-flow');
+if (processSection) processObserver.observe(processSection);
+
+/* =========================================
    SKILL BARS
    ========================================= */
 function animateBars() {
