@@ -170,6 +170,28 @@ document.querySelectorAll('.project-card').forEach(card => {
 });
 
 /* =========================================
+   SKILL BARS
+   ========================================= */
+function animateBars() {
+  document.querySelectorAll('.skill-bar__fill').forEach(bar => {
+    bar.style.width = bar.dataset.width + '%';
+  });
+}
+
+const skillsObserver = new IntersectionObserver(
+  entries => entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateBars();
+      skillsObserver.disconnect();
+    }
+  }),
+  { threshold: 0.2 }
+);
+
+const skillsSection = document.querySelector('.skills');
+if (skillsSection) skillsObserver.observe(skillsSection);
+
+/* =========================================
    ACTIVE NAV ON SCROLL
    ========================================= */
 const sections = document.querySelectorAll('section[id]');
