@@ -579,184 +579,170 @@
         <div class="section__line"></div>
       </div>
 
-      <div class="process-flow reveal-section">
+      <!-- ══ PHASE 1: TIMELINE ══ -->
+      <div class="proc-phase reveal-section">
+        <div class="proc-phase__label mono">PHASE 1 — PROJECT KICK-OFF</div>
 
-        <!-- ── MAIN 5 STEPS ── -->
-        <div class="flow-main">
-
-          <div class="flow-step" data-n="01">
-            <div class="flow-step__num mono">01</div>
-            <div class="flow-step__icon">◎</div>
-            <h4 class="flow-step__title">Discovery</h4>
-            <ul class="flow-step__list">
-              <li>Initial consultation</li>
-              <li>Requirements gathering</li>
-              <li>Goals &amp; timeline</li>
-            </ul>
+        <div class="proc-timeline">
+          <!-- animated connecting line -->
+          <div class="proc-timeline__track">
+            <div class="proc-timeline__fill" id="proc-fill"></div>
+            <div class="proc-timeline__particle"></div>
           </div>
 
-          <div class="flow-conn flow-conn--h"><div class="flow-conn__arrow">→</div></div>
+          <!-- step nodes -->
+          <div class="proc-timeline__steps">
 
-          <div class="flow-step" data-n="02">
-            <div class="flow-step__num mono">02</div>
-            <div class="flow-step__icon">◈</div>
-            <h4 class="flow-step__title">Planning</h4>
-            <ul class="flow-step__list">
-              <li>Tech stack decision</li>
-              <li>Architecture design</li>
-              <li>Estimate &amp; scope</li>
-            </ul>
+            <div class="proc-step" style="--si:0">
+              <div class="proc-step__card">
+                <span class="proc-step__icon">◎</span>
+                <h4>Discovery</h4>
+                <p>Initial call, requirements, goals &amp; budget</p>
+              </div>
+              <div class="proc-step__dot"><span class="mono">01</span></div>
+            </div>
+
+            <div class="proc-step" style="--si:1">
+              <div class="proc-step__card">
+                <span class="proc-step__icon">◈</span>
+                <h4>Planning</h4>
+                <p>Tech stack, architecture &amp; detailed estimate</p>
+              </div>
+              <div class="proc-step__dot"><span class="mono">02</span></div>
+            </div>
+
+            <div class="proc-step" style="--si:2">
+              <div class="proc-step__card">
+                <span class="proc-step__icon">✦</span>
+                <h4>Design</h4>
+                <p>Wireframes, Figma mockups &amp; client approval</p>
+              </div>
+              <div class="proc-step__dot"><span class="mono">03</span></div>
+            </div>
+
+            <div class="proc-step" style="--si:3">
+              <div class="proc-step__card">
+                <span class="proc-step__icon">⌘</span>
+                <h4>Development</h4>
+                <p>Frontend, backend, API &amp; CMS integration</p>
+              </div>
+              <div class="proc-step__dot"><span class="mono">04</span></div>
+            </div>
+
+            <div class="proc-step" style="--si:4">
+              <div class="proc-step__card">
+                <span class="proc-step__icon">◻</span>
+                <h4>Testing &amp; QA</h4>
+                <p>Performance, cross-device &amp; bug fixes</p>
+              </div>
+              <div class="proc-step__dot"><span class="mono">05</span></div>
+            </div>
+
+          </div><!-- /steps -->
+        </div><!-- /timeline -->
+      </div>
+
+      <!-- ══ LAUNCH NODE ══ -->
+      <div class="proc-launch-row reveal-section">
+        <div class="proc-vline proc-vline--down"></div>
+        <div class="proc-launch" id="proc-launch">
+          <div class="proc-launch__ring"></div>
+          <div class="proc-launch__ring proc-launch__ring--2"></div>
+          <span class="proc-launch__num mono">06</span>
+          <span class="proc-launch__title">Launch</span>
+          <span class="proc-launch__sub mono">Deployment</span>
+        </div>
+        <div class="proc-vline proc-vline--down"></div>
+        <div class="proc-fork-label mono">— choose your deployment path —</div>
+      </div>
+
+      <!-- ══ PHASE 2: BRANCHES ══ -->
+      <div class="proc-branches reveal-section">
+
+        <!-- BRANCH A -->
+        <div class="proc-branch proc-branch--standard">
+          <div class="proc-branch__top">
+            <div class="proc-branch__vline"></div>
           </div>
-
-          <div class="flow-conn flow-conn--h"><div class="flow-conn__arrow">→</div></div>
-
-          <div class="flow-step" data-n="03">
-            <div class="flow-step__num mono">03</div>
-            <div class="flow-step__icon">✦</div>
-            <h4 class="flow-step__title">Design</h4>
-            <ul class="flow-step__list">
-              <li>Wireframes</li>
-              <li>Visual mockups</li>
-              <li>Client approval</li>
-            </ul>
+          <div class="proc-branch__badge mono">✓ ALWAYS INCLUDED</div>
+          <div class="proc-branch__head">
+            <span class="proc-branch__letter accent mono">A</span>
+            <h4>Delivery &amp; Handoff</h4>
           </div>
-
-          <div class="flow-conn flow-conn--h"><div class="flow-conn__arrow">→</div></div>
-
-          <div class="flow-step" data-n="04">
-            <div class="flow-step__num mono">04</div>
-            <div class="flow-step__icon">⌘</div>
-            <h4 class="flow-step__title">Development</h4>
-            <ul class="flow-step__list">
-              <li>Frontend coding</li>
-              <li>Backend &amp; API</li>
-              <li>CMS integration</li>
-            </ul>
-          </div>
-
-          <div class="flow-conn flow-conn--h"><div class="flow-conn__arrow">→</div></div>
-
-          <div class="flow-step" data-n="05">
-            <div class="flow-step__num mono">05</div>
-            <div class="flow-step__icon">◻</div>
-            <h4 class="flow-step__title">Testing &amp; QA</h4>
-            <ul class="flow-step__list">
-              <li>Performance audit</li>
-              <li>Cross-device testing</li>
-              <li>Bug fixes</li>
-            </ul>
-          </div>
-
-        </div><!-- /flow-main -->
-
-        <!-- ── DROP TO LAUNCH ── -->
-        <div class="flow-center-col">
-          <div class="flow-conn flow-conn--v"></div>
-          <div class="flow-launch">
-            <span class="flow-launch__num mono">06</span>
-            <span class="flow-launch__title">Launch</span>
-            <span class="flow-launch__sub mono">deployment</span>
-          </div>
-          <div class="flow-conn flow-conn--v flow-conn--short"></div>
+          <ul class="proc-branch__list">
+            <li>Source code &amp; repository transfer</li>
+            <li>Technical documentation</li>
+            <li>Client training walkthrough</li>
+          </ul>
         </div>
 
-        <!-- ── T-BAR SPLIT ── -->
-        <div class="flow-tbar-outer">
-          <div class="flow-tbar"></div>
-        </div>
-
-        <!-- ── THREE BRANCHES ── -->
-        <div class="flow-branches">
-
-          <!-- BRANCH A: Standard Delivery -->
-          <div class="flow-branch">
-            <div class="flow-branch__stem"></div>
-            <div class="flow-branch__tag mono">STANDARD</div>
-            <div class="flow-bnode flow-bnode--always">
-              <div class="flow-bnode__letter mono">A</div>
-              <h5 class="flow-bnode__title">Delivery &amp; Handoff</h5>
-              <ul class="flow-bnode__list">
-                <li>Source code transfer</li>
-                <li>Technical documentation</li>
-                <li>Client walkthrough</li>
-              </ul>
-            </div>
+        <!-- BRANCH B -->
+        <div class="proc-branch proc-branch--opt">
+          <div class="proc-branch__top">
+            <div class="proc-branch__vline"></div>
           </div>
-
-          <!-- BRANCH B: Domain + DNS -->
-          <div class="flow-branch flow-branch--opt">
-            <div class="flow-branch__stem"></div>
-            <div class="flow-branch__tag mono accent">+ OPTIONAL</div>
-            <div class="flow-bnode">
-              <div class="flow-bnode__letter mono">B</div>
-              <h5 class="flow-bnode__title">Domain Setup</h5>
-              <ul class="flow-bnode__list">
-                <li>Domain registration</li>
-                <li>DNS configuration</li>
-                <li>Nameserver pointing</li>
-              </ul>
-            </div>
-            <div class="flow-conn flow-conn--v flow-conn--branch"></div>
-            <div class="flow-bnode">
-              <h5 class="flow-bnode__title">SSL &amp; Email DNS</h5>
-              <ul class="flow-bnode__list">
-                <li>Let's Encrypt SSL</li>
-                <li>SPF / DKIM records</li>
-                <li>CDN setup</li>
-              </ul>
-            </div>
+          <div class="proc-branch__badge mono">+ OPTIONAL</div>
+          <div class="proc-branch__head">
+            <span class="proc-branch__letter accent mono">B</span>
+            <h4>Domain &amp; DNS</h4>
           </div>
-
-          <!-- BRANCH C: VPS Server -->
-          <div class="flow-branch flow-branch--opt">
-            <div class="flow-branch__stem"></div>
-            <div class="flow-branch__tag mono accent">+ OPTIONAL</div>
-            <div class="flow-bnode">
-              <div class="flow-bnode__letter mono">C</div>
-              <h5 class="flow-bnode__title">VPS Setup</h5>
-              <ul class="flow-bnode__list">
-                <li>Server provisioning</li>
-                <li>Linux hardening</li>
-                <li>SSH key auth</li>
-              </ul>
+          <div class="proc-branch__flow">
+            <div class="proc-bnode">
+              <div class="proc-bnode__label mono">step 1</div>
+              <strong>Domain Setup</strong>
+              <p>Registration, DNS config &amp; nameservers</p>
             </div>
-            <div class="flow-conn flow-conn--v flow-conn--branch"></div>
-            <div class="flow-bnode">
-              <h5 class="flow-bnode__title">Security &amp; Network</h5>
-              <ul class="flow-bnode__list">
-                <li>UFW Firewall rules</li>
-                <li>Fail2ban protection</li>
-                <li>Nginx + Reverse Proxy</li>
-              </ul>
+            <div class="proc-bnode__conn"></div>
+            <div class="proc-bnode">
+              <div class="proc-bnode__label mono">step 2</div>
+              <strong>SSL &amp; Email</strong>
+              <p>Let's Encrypt SSL, SPF/DKIM records, CDN</p>
             </div>
-            <div class="flow-conn flow-conn--v flow-conn--branch"></div>
-            <div class="flow-bnode">
-              <h5 class="flow-bnode__title">Database &amp; Deploy</h5>
-              <ul class="flow-bnode__list">
-                <li>MySQL / MongoDB</li>
-                <li>App deployment &amp; PM2</li>
-                <li>Monitoring setup</li>
-              </ul>
-            </div>
-          </div>
-
-        </div><!-- /flow-branches -->
-
-        <!-- ── CONVERGE BAR ── -->
-        <div class="flow-tbar-outer flow-tbar-outer--converge">
-          <div class="flow-tbar"></div>
-        </div>
-
-        <!-- ── COMPLETE ── -->
-        <div class="flow-center-col">
-          <div class="flow-conn flow-conn--v flow-conn--short"></div>
-          <div class="flow-complete">
-            <span class="accent">✓</span>
-            <span>Project Complete</span>
           </div>
         </div>
 
-      </div><!-- /process-flow -->
+        <!-- BRANCH C -->
+        <div class="proc-branch proc-branch--opt">
+          <div class="proc-branch__top">
+            <div class="proc-branch__vline"></div>
+          </div>
+          <div class="proc-branch__badge mono">+ OPTIONAL</div>
+          <div class="proc-branch__head">
+            <span class="proc-branch__letter accent mono">C</span>
+            <h4>VPS Server</h4>
+          </div>
+          <div class="proc-branch__flow">
+            <div class="proc-bnode">
+              <div class="proc-bnode__label mono">step 1</div>
+              <strong>VPS Setup</strong>
+              <p>Provisioning, Linux hardening, SSH keys</p>
+            </div>
+            <div class="proc-bnode__conn"></div>
+            <div class="proc-bnode">
+              <div class="proc-bnode__label mono">step 2</div>
+              <strong>Security &amp; Network</strong>
+              <p>UFW firewall, Fail2ban, Nginx reverse proxy</p>
+            </div>
+            <div class="proc-bnode__conn"></div>
+            <div class="proc-bnode">
+              <div class="proc-bnode__label mono">step 3</div>
+              <strong>Database &amp; Deploy</strong>
+              <p>MySQL / MongoDB, PM2, monitoring</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /branches -->
+
+      <!-- ══ COMPLETE ══ -->
+      <div class="proc-complete-row reveal-section">
+        <div class="proc-vline proc-vline--up"></div>
+        <div class="proc-complete" id="proc-complete">
+          <span class="proc-complete__check">✓</span>
+          <span>Project Complete</span>
+        </div>
+      </div>
+
     </div>
   </section>
 

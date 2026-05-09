@@ -178,28 +178,41 @@ document.querySelectorAll('.pj').forEach(card => {
 });
 
 /* =========================================
-   PROCESS — stagger step nodes
+   PROCESS — timeline draw + stagger
    ========================================= */
-const processObserver = new IntersectionObserver(
-  entries => entries.forEach(e => {
+const procTimeline = document.querySelector('#proc-fill');
+const procSteps    = document.querySelectorAll('.proc-step__card, .proc-step__dot');
+const procBranches = document.querySelectorAll('.proc-bnode, .proc-branch__list li, .proc-complete');
+
+const procObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
     if (!e.isIntersecting) return;
-    const steps = e.target.querySelectorAll('.flow-step, .flow-bnode, .flow-launch, .flow-complete');
-    steps.forEach((el, i) => {
+
+    /* draw the timeline line */
+    if (procTimeline) procTimeline.style.width = '100%';
+
+    /* stagger step cards + dots */
+    procSteps.forEach((el, i) => {
+      setTimeout(() => el.classList.add('appeared'), i * 90 + 200);
+    });
+
+    /* stagger branch nodes */
+    procBranches.forEach((el, i) => {
       el.style.opacity = '0';
-      el.style.transform = 'translateY(16px)';
+      el.style.transform = 'translateY(14px)';
       setTimeout(() => {
-        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s cubic-bezier(0.22,1,0.36,1), border-color 0.2s, box-shadow 0.2s';
         el.style.opacity = '1';
         el.style.transform = 'translateY(0)';
-      }, i * 80);
+      }, i * 100 + 700);
     });
-    processObserver.disconnect();
-  }),
-  { threshold: 0.1 }
-);
 
-const processSection = document.querySelector('.process-flow');
-if (processSection) processObserver.observe(processSection);
+    procObserver.disconnect();
+  });
+}, { threshold: 0.1 });
+
+const procSection = document.querySelector('.process');
+if (procSection) procObserver.observe(procSection);
 
 /* =========================================
    SKILL BARS
